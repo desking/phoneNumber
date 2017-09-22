@@ -5,9 +5,9 @@ package com.desking;
  */
 public class Application {
 
-    public void run() {
+    public void run(String nameCatalog) {
         FileController fileController = new FileController();
-        PhoneNumberController phoneNumberController = new PhoneNumberController(fileController.getContentsOfFiles("D:\\TestData"));
+        PhoneNumberController phoneNumberController = new PhoneNumberController(fileController.getContentsOfFiles(nameCatalog));
 
     System.out.println(phoneNumberController.getPhoneNumbersFullFormat());
 
