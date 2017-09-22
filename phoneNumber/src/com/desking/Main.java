@@ -5,20 +5,15 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {
-    private Set<String> phoneNumbers = new HashSet<>();
-    Set<String> phoneNumbersFullFormat = new TreeSet<>();
 
     public static void main(String[] args) {
-        // write your code here
-        new Application().run();
+        if (args.length==0) {
+            System.out.println("Please write name directory!!!");
+        }
+        else {
+            new Application().run(args[0]);
+        }
+
     }
-
-//    private void run() {
-//        processFilesFromFolder(new File("D:\\TestData"));
-//        leadPhoneNumberToTheFullFormat();
-//        System.out.println(phoneNumbersFullFormat);
-//    }
-
-
 
 }
